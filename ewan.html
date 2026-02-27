@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hi my baby ku</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Bold,Times New Roman;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 22px;
+            width: 70%;
+            margin: auto;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background-color: violet;
+            color: #ff4b6e;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4b6e;
+            color: white;
+        }
+
+        #hiddenMessage {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hi Abe ku</h1>
+    <div class="heart"><3</div>
+    <p>
+        I just want you to know how special you are to me.  
+        You make my world brighter, my days happier,  
+        and my heart fuller every single day cutie
+    </p>
+
+    <button onclick="showMessage()">Click Me Baby 💌</button>
+
+    <div id="hiddenMessage">
+        I love you so much missed u baby ::/
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("hiddenMessage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
